@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Project2-Login</title>
+
+  <!-- Custom fonts for this template-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-dark">
+
+  <div class="container">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <div class="text-center">
+                      <i class="fas fa-users"></i>
+                    <h1 class="h1 text-gray-900 mb-4">Welcome !</h1>
+                    <h1 class="h5 text-gray-900 mb-4">Please Enter Username and Password</h1>
+                  </div>
+                  <form id="mainform" action="dashboard.html" class="user" novalidate>
+                    <div class="form-group">
+                      <input type="email"
+                        pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" required
+                        class="form-control form-control-user" id="InputEmail" aria-describedby="emailHelp"
+                        placeholder="Enter Email Address...">
+                      <div class="invalid-feedback">
+                        Please Enter your Email admin@nw.com  !!!
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" required class="form-control form-control-user" id="InputPassword"
+                        placeholder="Password"  pattern="[1][2][3][4][5][*]{2}">
+                        <div class="invalid-feedback">
+                          Please Enter your Password 12345** !!!
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <input type="checkbox" class="custom-control-input" id="customCheck">
+                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+                      </div>
+                    </div>
+
+                     <hr>
+
+                    <button type="submit"  id="login" class="btn btn-info btn-user btn-block">
+                      Login
+                    </button>
+                    
+                  </form>
+                 
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Oop!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Please Check Username and Password
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Custom scripts for this pages  --> 
+  <script src="js/index.js"></script>
+
+  
+
+</body>
+
+</html>
